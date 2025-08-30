@@ -23,7 +23,7 @@ function TopNav() {
           </div>
           <div className="right-block flex items-center gap-5">
             <div className="line h-6 w-px bg-grey max-sm:hidden"></div>
-            <div className="flex items-center gap-2.5 max-sm:hidden">
+            <div className="flex items-center gap-2.5 max-sm:hidden list-social">
               <Link className="item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center" target="_blank" href="https://facebook.com/">
                 <i className="icon-facebook text-sm"></i> 
               </Link>
