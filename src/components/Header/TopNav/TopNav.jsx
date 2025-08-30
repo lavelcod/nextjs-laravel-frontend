@@ -1,5 +1,6 @@
 import React from "react";
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 
 function TopNav() {
   return (
@@ -18,6 +19,27 @@ function TopNav() {
               <span className="ml-2 caption1 text-white">
                 Support@lavelcod.ir
               </span>
+            </div>
+          </div>
+          <div className="right-block flex items-center gap-5">
+            <div className="line h-6 w-px bg-grey max-sm:hidden"></div>
+            <div className="flex items-center gap-2.5 max-sm:hidden">
+              <Link className="item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center" target="_blank" href="https://facebook.com/">
+                <i className="icon-facebook text-sm"></i> 
+              </Link>
+              <Link className="item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center" target="_blank" href="https://linkendin.com/">
+                <i className="icon-in text-sm"></i> 
+              </Link>
+              <Link className="item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center" target="_blank" href="https://twitter.com/">
+                <i className="icon-twitter text-sm"></i> 
+              </Link>
+              <Link className="item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center" target="_blank" href="https://instagram.com/">
+                <i className="icon-insta text-sm"></i> 
+              </Link>
+              <Link className="item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center" target="_blank" href="https://youtube.com/">
+                <i className="icon-youtube text-[10px]"></i> 
+              </Link>
+              
             </div>
           </div>
         </div>
