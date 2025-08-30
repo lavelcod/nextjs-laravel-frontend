@@ -10,6 +10,7 @@ function Menu() {
   // console.log(pathName)
   const [fixedHeader, setFixedHeader] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  console.log(openMobileMenu)
   return (
     <>
       <div className={`header-menu bg-white  ${fixedHeader ? "fixed" : ""}`}>
@@ -115,7 +116,7 @@ function Menu() {
             </div>
           </div>
         </div>
-        <div id="menu-mobile-block " className={`${openMobileMenu && "open"}`}>
+        <div id="menu-mobile-block" className={`${openMobileMenu && "open"}`}>
           <div className="menu-mobile-main">
             <div className="container">
               <ul>
