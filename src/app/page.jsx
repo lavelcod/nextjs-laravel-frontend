@@ -1,27 +1,34 @@
 import Menu from "@/components/Header/Menu/Menu";
 import TopNav from "@/components/Header/TopNav/TopNav";
+import Service from "@/components/Service/Service";
 import Slider from "@/components/Slider/Slider";
 import Image from "next/image";
-import Service from "../components/Service/Service";
-import serviceData from "@/data/service.json"
+import serviceData from '@/data/service.json'
 import PaymentGateway from "@/components/PaymentGateway/PaymentGateway";
-import CaseStudy from "../components/CaseStudy/CaseStudy";
+import CaseStudy from "@/components/CaseStudy/CaseStudy";
 import PaymentGatewayTwo from "@/components/PaymentGateway/PaymentGatewayTwo";
+// import FormRequest from "@/components/FormRequest/FormRequest";
 
 export default function Home() {
+
   return (
     <div className="overflow-x-hidden">
       <header id="header">
-        <TopNav/>
-        <Menu/>
+          <TopNav/>
+          <Menu/>
       </header>
       <main className="content">
-        <Slider />
+        <Slider/>
         <Service data={serviceData} />
         <PaymentGateway/>
-         <CaseStudy/>
-         <PaymentGatewayTwo />
+        <CaseStudy/>
+        <PaymentGatewayTwo/>
+
       </main>
+
+
+
     </div>
+    
   );
 }
