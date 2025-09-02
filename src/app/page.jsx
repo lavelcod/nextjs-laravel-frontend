@@ -4,6 +4,7 @@ import Slider from "@/components/Slider/Slider";
 import Image from "next/image";
 import Service from "../components/Service/Service";
 import serviceData from "@/data/service.json"
+import PaymentGateway from "@/components/PaymentGateway/PaymentGateway";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="content">
         <Slider />
         <Service data={serviceData} />
+        <PaymentGateway/>
       </main>
     </div>
   );
